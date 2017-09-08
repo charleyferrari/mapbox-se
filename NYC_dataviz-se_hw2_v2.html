@@ -220,8 +220,10 @@
             yearLabel.innerHTML = slider.value;
         }
 
-        slider.addEventListener('change', function(d){
-            filterBy(slider.value);
+        slider.addEventListener('input', function(e){
+            filterBy(e.target.value);
+            // console.log(e);
+            // yearLabel.innerHTML = slider.value;
         });
 
         // Add zoom and rotation controls to the map.
