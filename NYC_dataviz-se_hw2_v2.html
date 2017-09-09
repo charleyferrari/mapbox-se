@@ -221,7 +221,7 @@
         }
 
         slider.addEventListener('input', function(e){
-            filterBy(e.target.value);
+            filterBy(parseInt(e.target.value));
             // console.log(e);
             // yearLabel.innerHTML = slider.value;
         });
