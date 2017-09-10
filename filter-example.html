@@ -147,7 +147,8 @@ map.on('load', function() {
     // Add a GeoJSON source containing place coordinates and information.
     map.addSource("places", {
         "type": "geojson",
-        "data": places
+        "data": places,
+        "cluster": true
     });
 
     places.features.forEach(function(feature) {
